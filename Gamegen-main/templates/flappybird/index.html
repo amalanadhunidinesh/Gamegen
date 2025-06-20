@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flappy Bird Seasons</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+</head>
+<body>
+  <div id="seasonButtons">
+    <button onclick="selectSeason('summer')">☀️ Summer</button>
+    <button onclick="selectSeason('spring')">🌸 Spring</button>
+    <button onclick="selectSeason('monsoon')">🌧️ Monsoon</button>
+    <button onclick="selectSeason('winter')">❄️ Winter</button>
+  </div>
+
+  <div id="difficultyButtons" style="display: none;">
+    <button onclick="setDifficulty('easy')">Easy</button>
+    <button onclick="setDifficulty('medium')">Medium</button>
+    <button onclick="setDifficulty('hard')">Hard</button>
+  </div>
+
+  <div id="startMessage">🕹️ Press any key to start</div>
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="scoreContainer">
+    <div id="scoreDisplay">Score: 0</div>
+  </div>
+
+  <div id="gameOverScreen">
+    <div class="game-over-box">
+      <h2>💥 Game Over!</h2>
+      <p id="finalScore">Score: 0</p>
+      <div class="buttons">
+        <button onclick="restartGame()">🔁 Restart</button>
+        <button onclick="goHome()">🏠 Home</button>
+      </div>
+    </div>
+  </div>
+
+ <script src="game1.js"></script>
+
+
+
+</body>
+</html>
